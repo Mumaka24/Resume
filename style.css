@@ -16,23 +16,25 @@ contain-intrinsic-inline-size: border-box;
   }
 body{
   font-family: Inter, sans - serif;
-  background-color: rgb(39, 1, 37);
-  color: white;
+  background-color: rgb(233, 241, 240);
+  color: rgb(58, 3, 3);
 }
 img{
-  width:50%;
+  width:100%; 
+
 
 }
 a{
   text-decoration:underline;
   color:#000308
+  
 }
 .description{
   margin-top: 1rem;
   font-size:-0.8rem;
   font-weight: 0.5;
   font-size: 15px;
-  color: white
+  color: rgb(58, 3, 3);)
 }
 
 /* layouts */
@@ -43,13 +45,10 @@ a{
   display: grid;
   grid-template-columns: 10% 90%
   padding- 5rem
-  background-color #00060e;
+  background-color #cddaeb;
   
-  
-  
-  
-}
-@media only screen and (max-with: 768px) {
+  }
+@media only screen and (max-with: 368px) {
   .Container {
     width: 100%;
     grid-template-columns:1f;
@@ -60,50 +59,46 @@ a{
 .profile {
   grid-column: 1/ -1;
   margin-bottom: 2rem;
-}
-/* profile */
-.profile_container {
-  display: flex;
-  gap: 2rem;
-  border:
-  width: 60%;
-  margin: 1em;
-   background-image:url('https://gifdb.com/images/high/flowing-water-background-3or1h2fe6iuieki4.gif'); */
-  background-size:cover;
   }
 
+    /* profile */
+     .profile_container {
+      display: flex;
+    }
 
-  
-
-
-  .circle-image img {
+    .profile_profileImg {
     width: 100%; /* makes the image fill thi div */
-    height: 100%;
+    height: 4%;
     object-fit: cover; /*scales the image to cover the div */
+    -o-object-fit: cover;
+    font-size: smaller;
+    color: white;
+    background-color: #4d8599;
     
 
   }
   .profile_name_firstName{
-    color: white;
+   color: rgb(58, 3, 3);
     font: weight 15px;
-    font-size:clamp(0.5rem, 4vw, 2rem);
+    font-size:clamp(0.3rem, 3vw, 2rem);
     text-transform: uppercase;
-    justify-content: right;
+    justify-content: center;
+    text-align: center;
    
     
   }
   .profile_name_lastName{
-  color: var(--primary-color);
-  font-weight: 200;
-  font-size: clamp(1.5rem, 7vw, 3.5rem);
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: -0.8rem;
+    color:rgb(58, 3, 3);
+    font: weight 15px;
+    font-size:clamp(2rem, 5vw, 4rem);
+    text-transform: uppercase;
+    justify-content: center;
+  
   }
 
 .profile_tittle{
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 50px;
   text-transform:uppercase 
 }
 .downloadBtn {
@@ -118,26 +113,6 @@ a{
   color:black
 }
 
-.infoContainer {
-  border: solid black;
-  margin: 1em;
-  /* height: 80vh; */
-  background-size:contain;
-  display: flex;
-}
-
-.dropContainer {
-  border: solid black;
-  padding:1em;
-  margin: 1em;
-  border-width: 0.2px;
-  width: 40%;
-}
-.displayContainer {
-  /* border: solid ; */
-  margin: 1em;
-  width: 60%;
-}
 .title {
   text-align: center;
 }
@@ -146,48 +121,16 @@ a{
   padding: 5px;
   font-family:Abril Fatface serif;
   font-size:22px;
-}
-.symbolContainer {
-  border: solid black;
-  border-width:.2px;
-border-radius:10px;
-  /* height:90px; */
-}
-.symParent {
-  /* border: solid green; */
-  border-width: 0.2px;
-  display: flex;
-  justify-content: space-between;
-  height: 30px;
-  margin: 1em;
-}
-.icon {
-  border: solid grey;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.texas {
-  /* border: solid orange; */
-  width: 60%;
-  text-align: right;
-}
-.sectionContainer {
-  border: solid black;
-  margin: 1em;
-  background-color: #333C3F;
-  color: white;
-  display:flex;
-  flex-wrap:wrap;
+  justify-content:center ;
 }
 
 div{
   border-width:1px;
   border-style:dashed;
-  border-color:white
-
-
+  border-color:rgb(10, 1, 1)
 }
+
+
 .footer {
   position: fixed;
   left: 0;
